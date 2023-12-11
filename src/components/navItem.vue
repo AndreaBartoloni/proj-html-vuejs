@@ -19,8 +19,8 @@ export default {
 </script>
 
 <template>
-    <div class="background-beige" >
-        <div class="container-header">
+    <div class="background-beige " >
+        <div class="container-header container-big">
             <div class="container-logo">
                 <img :src="logo">
             </div>
@@ -49,15 +49,12 @@ export default {
 
 <style scoped>
 
-.background-beige{
-    background-color: #f5f1ed;
-}
+
 .container-header{
     display: flex;
     align-items: center;
-    text-align: center;
-   margin: auto;
-    width: 90%;
+
+    padding: 8px 0px;
 }
 .container-logo{
     width:25%;

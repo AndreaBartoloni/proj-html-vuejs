@@ -1,11 +1,13 @@
 <!-- app.vue -->
 
 <script>
-import NavBar from '/src/components/NavBar.vue';
+import navItem from './components/navItem.vue';
+import hero from './components/hero.vue';
 
 export default {
   components: {
-    NavBar
+    navItem,
+    hero
   },
   data() {
     return {
@@ -39,6 +41,14 @@ export default {
           link: '#' 
         }
        
+      ], 
+      contentHero: [
+        {
+          title: "Complete Your Dreams in JavaS Programming",
+          description: "Learn any coding program in distance and for a reasonable fee. You don't have to struggle alone, you've got our assistance and help.",
+          iconDownload: "/src/img/download-solid.svg",
+          buttonText: "Download free E-book"
+        }
       ]
     };
   }
@@ -46,7 +56,9 @@ export default {
 </script>
 
 <template>
-  <NavBar :menu="menuItems" />
+  
+  <navItem :menu="menuItems"/>
+  <hero :heroText="contentHero"/>
 </template>
 
 <style lang="scss">
