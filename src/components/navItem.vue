@@ -66,6 +66,7 @@ export default {
     width: 75%;
     display: flex;
     align-items: center;
+    text-align: end;
 }
 ul{
     width: 60%;
@@ -83,7 +84,7 @@ ul{
 }
 .container-searchBar{
     width: 29% ;
-    text-align: start;
+    text-align: center;
 }
 .container-searchBar > input{
     width: 60% ;

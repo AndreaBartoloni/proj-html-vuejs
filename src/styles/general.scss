@@ -11,5 +11,22 @@ body {
 
 .container-big{
   margin: auto;
-  width: 90%;
+  max-width: 1200px;
+
 }
+
+.flex{
+  display: flex;
+
+}
+.align-center{
+  align-items: center;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+
+.mt-120{
+  margin-top: 120px;
+}
+
