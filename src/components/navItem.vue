@@ -37,7 +37,7 @@ export default {
                     <img :src="user">
                 </div>
                 <div class="container-searchBar">
-                    <input>
+                    <input placeholder="Search...">
                     <img :src="search">
                 </div>
             </div>
@@ -87,7 +87,17 @@ ul{
     text-align: center;
 }
 .container-searchBar > input{
-    width: 60% ;
+    width: 40% ;
+    border: none;
+    padding: 13px 20px;
+    border-radius: 5px 0px 0px 5px;
+}
+.container-searchBar > img{
+    vertical-align: middle;
+    padding-left: 10px;
+    background-color: white;
+    padding: 13px 20px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 </style>
