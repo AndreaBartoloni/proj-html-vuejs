@@ -14,7 +14,9 @@ body {
   max-width: 1200px;
 
 }
-
+.center{
+  text-align: center;
+}
 .flex{
   display: flex;
 
@@ -24,6 +26,9 @@ body {
 }
 .justify-content-between{
   justify-content: space-between;
+}
+.flex-wrap{
+  flex-wrap: wrap;
 }
 
 .mt-120{

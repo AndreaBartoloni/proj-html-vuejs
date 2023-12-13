@@ -5,13 +5,20 @@ import navItem from './components/navItem.vue';
 import hero from './components/hero.vue';
 import AppBuildDream from './components/AppBuildDream.vue';
 import AppCareer from './components/AppCareer.vue';
+import AppCounter from './components/AppCounter.vue';
+import AppCourse from './components/AppCourse.vue';
+import AppLeftRight from './components/AppLeftRight.vue';
+
 
 export default {
   components: {
     navItem,
     hero, 
     AppBuildDream,
-    AppCareer
+    AppCareer, 
+    AppCounter,
+    AppCourse,
+    AppLeftRight
   },
   data() {
     return {
@@ -126,11 +133,144 @@ export default {
           description: "It’s not just a normal thing to be able to build such a solid online educational system like MaxCoach where your progress is easily tracked and feedback is properly delivered. We promise to keep improving our system for better stability and flexibility.",
           isOpen: false
         },
+      ],
+      countersNum: [
+        { 
+          targetNumber: "1926", 
+          text:"Finished Sessions",
+          duration: 3000, 
+          startNumber: 0 
+        },
+        { 
+          targetNumber: "3092+", 
+          text:"enrolled learners",
+          duration: 3000, 
+          startNumber: 0 
+        },
+        { 
+          targetNumber: "200", 
+          text:"online instructor",
+          duration: 3000, 
+          startNumber: 0 
+        },
+        { 
+          targetNumber: "100%", 
+          text:"satisfaction rate",
+          duration: 3000, 
+          startNumber: 0 
+        },
+      ],
+      // Section course Main
+      courseList: [
+        {
+          image: "/src/img/finance-course-thumbnail-04-480x298.jpg",
+          imageThub: "/src/img/1c2c9a0fac3cd923d80b4ea64a0806ce.jpg",
+          name: "Owen Christ",
+          description: "Personal Finance: Financial Security Thinking & Principles",
+          iconLesson: "/src/img/file-regular.svg",
+          numLesson: "2 Lessons",
+          iconStudent: "/src/img/user-regular.svg",
+          numStudent: "2 Students",
+          widget: "Free"
+          
+        },
+        {
+          image: "/src/img/finance-course-thumbnail-04-480x298.jpg",
+          imageThub: "/src/img/1c2c9a0fac3cd923d80b4ea64a0806ce.jpg",
+          name: "Owen Christ",
+          description: "Personal Finance: Financial Security Thinking & Principles",
+          iconLesson: "/src/img/file-regular.svg",
+          numLesson: "2 Lessons",
+          iconStudent: "/src/img/user-regular.svg",
+          numStudent: "2 Students",
+          widget: "$40.00"
+          
+        },
+        {
+          image: "/src/img/finance-course-thumbnail-04-480x298.jpg",
+          imageThub: "/src/img/1c2c9a0fac3cd923d80b4ea64a0806ce.jpg",
+          name: "Owen Christ",
+          description: "Personal Finance: Financial Security Thinking & Principles",
+          iconLesson: "/src/img/file-regular.svg",
+          numLesson: "2 Lessons",
+          iconStudent: "/src/img/user-regular.svg",
+          numStudent: "2 Students",
+          widget: "Free"
+          
+        },
+        {
+          image: "/src/img/finance-course-thumbnail-04-480x298.jpg",
+          imageThub: "/src/img/1c2c9a0fac3cd923d80b4ea64a0806ce.jpg",
+          name: "Owen Christ",
+          description: "Personal Finance: Financial Security Thinking & Principles",
+          iconLesson: "/src/img/file-regular.svg",
+          numLesson: "2 Lessons",
+          iconStudent: "/src/img/user-regular.svg",
+          numStudent: "2 Students",
+          widget: "$19.00"
+          
+        },
+        {
+          image: "/src/img/finance-course-thumbnail-04-480x298.jpg",
+          imageThub: "/src/img/1c2c9a0fac3cd923d80b4ea64a0806ce.jpg",
+          name: "Owen Christ",
+          description: "Personal Finance: Financial Security Thinking & Principles",
+          iconLesson: "/src/img/file-regular.svg",
+          numLesson: "2 Lessons",
+          iconStudent: "/src/img/user-regular.svg",
+          numStudent: "2 Students",
+          widget: "$26.00"
+          
+        },
+        {
+          image: "/src/img/finance-course-thumbnail-04-480x298.jpg",
+          imageThub: "/src/img/1c2c9a0fac3cd923d80b4ea64a0806ce.jpg",
+          name: "Owen Christ",
+          description: "Personal Finance: Financial Security Thinking & Principles",
+          iconLesson: "/src/img/file-regular.svg",
+          numLesson: "2 Lessons",
+          iconStudent: "/src/img/user-regular.svg",
+          numStudent: "2 Students",
+          widget: "$39.00"
+          
+        },
+      ],
+      contentLeftRight: [
+        {
+          contentRight: [
+            {
+              check: "/src/img/check-solid.svg",
+              description: "Select & customize courses to your preferences",
+     
+            },
+            {
+              check: "/src/img/check-solid.svg",
+              description: "Change the tutor and make arrangements",
+     
+            },
+            {
+              check: "/src/img/check-solid.svg",
+              description: "Participate in events to join others",
+     
+            },
+            {
+              check: "/src/img/check-solid.svg",
+              description: "Get the desired certificate delivered at house"
+     
+            }
+          ]
+        }
+     
+        
       ]
 
+      
+              
+              
     };
   }
 };
+
 </script>
 
 <template>
@@ -142,6 +282,9 @@ export default {
     <hero :heroText="contentHero"/>
     <AppBuildDream :dream="sectionDream"/>
     <AppCareer :career="sectionCareer"/>
+    <AppCounter :counters="countersNum"/>
+    <AppCourse :courseItems="courseList"/>
+    <AppLeftRight :items="contentLeftRight"/>
   </main>
 
   <footer>
